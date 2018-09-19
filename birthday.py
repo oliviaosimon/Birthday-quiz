@@ -33,34 +33,38 @@ Example Session
 """
 from datetime import datetime
 from calendar import month_name
+todayMonth = datetime.today().month
 
 name = input("Hello, what is your name? ")
 
+#MONTH OF BIRTH
 birthMonth = input("Hi "+name+", what was the name of the month you were born in? ")
-if birthMonth == December or birthMonth== January or birthMonth== February
+if birthMonth == "December" or birthMonth== "January" or birthMonth== "February":
     season = "winter baby"
-elif birthMonth == March or birthMonth== April or birthMonth== May
+elif birthMonth == "March" or birthMonth== "April" or birthMonth== "May":
     season = "spring baby"
-elif birthMonth == June or birthMonth== July or birthMonth==August
+elif birthMonth == "June" or birthMonth== "July" or birthMonth== "August":
     season = "summer baby"
 
+#YEAR OF BIRTH
 birthYear = input("And what year were you born in, "+name+"? ")
-if birthYear < 1980
+if birthYear < 1980:
     period = "stone age"
-elif birthYear == range(1980,1989,1)
+elif birthYear == range(1980,1989,1):
     period = "eighties"
-elif birthYear == range(1990,1999,1)
+elif birthYear == range(1990,1999,1):
     period = "nineties"
-elif birthYear >= 2000
+elif birthYear >= 2000:
     period = "two thousands"
 
+#DAY OF BIRTH
 birthDay = input("And the day? ")
-if birthDay == datetime.today().day and birthMonth == datetime.today().month
+if int(birthDay) == datetime.today().day and birthMonth == month_name[todayMonth]:
     print("Happy Birthday!")
-elif birthDay == 31 and birthMonth == October
+elif int(birthDay) == 31 and birthMonth == "October":
     print "You were born on Halloween!"
-elif birthDay == 25 and birthMonth == December
+elif int(birthDay) == 25 and birthMonth == "December":
     print("You were born on Christmas!")
-else
+else:
     print(name+", you are a "+season+" of the "+period+".")
 
