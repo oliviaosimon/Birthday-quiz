@@ -52,9 +52,9 @@ else:
 birthYear = input("And what year were you born in, "+name+"? ")
 if int(birthYear) < 1980:
     period = "stone age"
-elif int(birthYear) == range(1980,1989):
+elif int(birthYear) >=1980 and int(birthYear) <= 1989:
     period = "eighties"
-elif int(birthYear) == range(1990,1999):
+elif int(birthYear) >=1990 and int(birthYear) <= 1999:
     period = "nineties"
 elif int(birthYear) > 1999:
     period = "two thousands"
