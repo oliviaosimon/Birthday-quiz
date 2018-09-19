@@ -37,11 +37,11 @@ from calendar import month_name
 name = input("Hello, what is your name? ")
 
 birthMonth = input("Hi "+name+", what was the name of the month you were born in? ")
-if birthMonth == December or == January or == February
+if birthMonth == December or birthMonth== January or birthMonth== February
     season = "winter baby"
-elif birthMonth == March or == April or == May
+elif birthMonth == March or birthMonth== April or birthMonth== May
     season = "spring baby"
-elif birthMonth == June or == July or ==August
+elif birthMonth == June or birthMonth== July or birthMonth==August
     season = "summer baby"
 
 birthYear = input("And what year were you born in, "+name+"? ")
