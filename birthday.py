@@ -45,6 +45,8 @@ elif birthMonth == "March" or birthMonth== "April" or birthMonth== "May":
     season = "spring baby"
 elif birthMonth == "June" or birthMonth== "July" or birthMonth== "August":
     season = "summer baby"
+else:
+    season = "null"
 
 #YEAR OF BIRTH
 birthYear = input("And what year were you born in, "+name+"? ")
@@ -56,6 +58,8 @@ elif int(birthYear) == range(1990,1999):
     period = "nineties"
 elif int(birthYear) > 1999:
     period = "two thousands"
+else:
+    period = "null"
 
 #DAY OF BIRTH
 birthDay = input("And the day? ")
@@ -67,4 +71,3 @@ elif int(birthDay) == 25 and birthMonth == "December":
     print("You were born on Christmas!")
 else:
     print(name+", you are a "+season+" of the "+period+".")
-
