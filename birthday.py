@@ -48,13 +48,13 @@ elif birthMonth == "June" or birthMonth== "July" or birthMonth== "August":
 
 #YEAR OF BIRTH
 birthYear = input("And what year were you born in, "+name+"? ")
-if birthYear < 1980:
+if int(birthYear) < 1980:
     period = "stone age"
-elif birthYear == range(1980,1989,1):
+elif int(birthYear) == range(1980,1989):
     period = "eighties"
-elif birthYear == range(1990,1999,1):
+elif int(birthYear) == range(1990,1999):
     period = "nineties"
-elif birthYear >= 2000:
+elif int(birthYear) > 1999:
     period = "two thousands"
 
 #DAY OF BIRTH
