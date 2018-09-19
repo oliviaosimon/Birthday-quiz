@@ -64,7 +64,7 @@ else:
 #DAY OF BIRTH
 birthDay = input("And the day? ")
 if int(birthDay) == datetime.today().day and birthMonth == month_name[todayMonth]:
-    print("Happy Birthday!")
+    print("Happy birthday!")
 elif int(birthDay) == 31 and birthMonth == "October":
     print("You were born on Halloween!")
 elif int(birthDay) == 25 and birthMonth == "December":
